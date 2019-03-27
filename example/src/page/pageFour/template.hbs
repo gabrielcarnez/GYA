@@ -1,0 +1,19 @@
+<h2>Page Four</h2>
+<div class="w3-col 12">
+    <div class="w3-container">
+        <label>this is a page</label>
+    <ul>
+        <item-loop items="{{json data.items}}">
+            <li class="class" id="[key]">
+                <p>[text]</p>
+                <a href="pageFive/[key]">editar</a>
+            </li>
+        </item-loop>
+        <item-loop items="{{json data.dates}}" as="element">
+            <li class="class">
+                <p>[element]</p>
+            </li>
+        </item-loop>
+    </ul>
+    </div>
+</div>
