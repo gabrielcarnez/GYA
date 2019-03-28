@@ -122,3 +122,18 @@ If you want used some of this mehod, you need call app.dom.theMethodThatYouWantC
 - clearAllHtml(ele): find all elems and emtpy the content,
 - on(event, ele, action): set a event(click,change etc) to the element (ele) with action (action should be a function),
 
+#### setModel(modelKey, value)
+Set the value to a key of the model
+this.actionModel.setModel("person.name","carlos")
+
+#### getModel(modelKey)
+return the value to a key of the model
+const personName = this.actionModel.setModel("person.name")
+console.log(personName)
+
+### pageController
+The pageController will you permited load page of your app.
+
+#### pageController
+This method permited to you init a new page
+
