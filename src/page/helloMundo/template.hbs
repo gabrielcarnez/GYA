@@ -1,6 +1,24 @@
 <div>
     <h2>Hey! I'm using GYA!</h2>
     <p id="text"></p>
+
+    <if-condition condition="{{data.a}} == 1">
+    	<p>Hola</p>
+    </if-condition>
+
+    <select-condition compare-with={{data.a}}>
+    	<case-condition equalTo="1">
+    		<p>1</p>
+    	</case-condition>
+    	<case-condition equalTo="2">
+    		<p>2</p>
+    	</case-condition>
+    	<case-condition equalTo="3">
+    		<p>3</p>
+    	</case-condition>
+    </select-condition>
+
+    
     <button class="button_1">Revert</button>
 </div>
 
