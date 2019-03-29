@@ -30,6 +30,7 @@ const myRouters = {
 
 const app = new GYA({
     app: "#content",
+    folder:"/GYA",
     model: MyModel,
     actions: myMethods,
     routers: myRouters
