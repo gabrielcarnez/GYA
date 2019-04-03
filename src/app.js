@@ -14,6 +14,14 @@ const myMethods = {
         strMessage = `${dataMessage1} ${dataMessage2}`;
         app.actionModel.setModel("data.message", strMessage);
         return strMessage;
+    },
+    complete: () => {
+        return "<p>hi mundo!</p>"
+    },
+    completeDOM: () => {
+        const p = document.createElement("p")
+        p.innerHTML = "hello mundo!"
+        return p
     }
 };
 
